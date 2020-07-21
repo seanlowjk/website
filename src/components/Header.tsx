@@ -20,7 +20,7 @@ function Header() {
           style={{
             color: "#333",
           }}
-          href="/"
+          href="/website/"
         >
           Sean Low
         </Nav.Link>
