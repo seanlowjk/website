@@ -4,7 +4,7 @@ node_js:
 cache: npm
 script:
   - echo "yarn test temporarily disabled"
-  - yarn run build&&gh-pages -b gh-pages -d build
+  - yarn run build
 
 deploy:
   provider: pages
