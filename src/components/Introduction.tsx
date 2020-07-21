@@ -10,6 +10,7 @@ function Introduction() {
             className="container-video"
             src="images/3241.mp4"
             autoPlay
+            muted
             loop={true}
           />
           <h1 className="container-header">Sean Low</h1>
