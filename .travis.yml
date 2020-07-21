@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 12.14.0
+cache: npm
+script:
+  - echo "yarn test temporarily disabled"
+  - yarn run build&&gh-pages -b gh-pages -d build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: master
