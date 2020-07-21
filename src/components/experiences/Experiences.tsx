@@ -1,36 +1,17 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import Job from "./JobItem";
+import { ExperienceItems } from "../../utils/UserConstants";
 
 function Experiences() {
   return (
-    <div id="experiences">
-      <Card>
-        <Card.Header
-          style={{
-            background: "white",
-            color: "black",
-          }}
-          className="text-center"
-        >
-          Experiences
-        </Card.Header>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Job infoIndex={0} />
-
-          <Job infoIndex={1} />
-
-          <Job infoIndex={2} />
-
-          <Job infoIndex={3} />
+    <div className="Experiences" id="experiences">
+      <Card className="exp-container">
+        <Card.Header className="text-center">Experiences</Card.Header>
+        <div className="exp-cards">
+          {ExperienceItems.map((job) => (
+            <Job job={job} />
+          ))}
         </div>
       </Card>
     </div>

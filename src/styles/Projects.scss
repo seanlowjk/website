@@ -1,0 +1,18 @@
+.Projects {
+  .project-container {
+    .project-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .project-card {
+        background: white;
+        color: black;
+        width: 17rem;
+        margin: 3vh 1.5vw 3vh 1.5vw;
+      }
+    }
+  }
+}

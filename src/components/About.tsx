@@ -3,48 +3,14 @@ import { Card } from "react-bootstrap";
 
 function About() {
   return (
-    <div id="about">
-      <Card>
-        <Card.Header
-          style={{
-            background: "white",
-            color: "black",
-          }}
-          className="text-center"
-        >
-          About Me
-        </Card.Header>
-        <Card.Body
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Card
-            style={{
-              borderStyle: "none",
-              width: "50rem",
-              margin: "1vw 1vw 1vw 1vw",
-            }}
-          >
-            <Card.Body
-              className="text-center"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+    <div className="About" id="about">
+      <Card className="about-container">
+        <Card.Header className="text-center">About Me</Card.Header>
+        <Card.Body className="container-content">
+          <Card className="content-card">
+            <Card.Body className="text-center content-body">
               <img
-                style={{
-                  width: "10rem",
-                  height: "10rem",
-                  borderRadius: "50%",
-                }}
+                className="content-img"
                 src="images/seanlowjk.jpg"
                 alt="profilepic"
               ></img>

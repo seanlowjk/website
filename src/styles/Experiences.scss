@@ -1,0 +1,17 @@
+.Experiences {
+  .exp-container {
+    .exp-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .exp-card {
+        border-style: none;
+        width: 30rem;
+        margin: 1vw 1vw 1vw 1vw;
+      }
+    }
+  }
+}

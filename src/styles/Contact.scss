@@ -1,0 +1,21 @@
+.Contact {
+  text-align: center;
+
+  .contact-body {
+    display: flex;
+    flex-direction: column;
+
+    .social-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .social-card {
+        margin: 1vh 1vw 1vh 1vw;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

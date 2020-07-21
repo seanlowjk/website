@@ -1,34 +1,25 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-import { ProjectItems } from "../../utils/User";
+import { ProjectItem } from "../../utils/UserTypes";
 
 type ProjectCardProps = {
-  projectIndex: number;
+  project: ProjectItem;
 };
 
 function ProjectCard(props: ProjectCardProps) {
-  const { projectIndex } = props;
+  const { project } = props;
 
   return (
     <>
-      <Card
-        className="text-center"
-        style={{
-          background: "white",
-          color: "black",
-          width: "18rem",
-          margin: "3vh 1.5vw 3vh 1.5vw",
-        }}
-      >
+      <Card className="text-center project-card">
         <Card.Img
           variant="top"
-          src={ProjectItems[projectIndex].backgroundImageUrl}
-          alt="hehe"
-          style={{}}
+          src={project.backgroundImageUrl}
+          alt={project.title}
         />
         <Card.Body>
-          <Card.Title>{ProjectItems[projectIndex].title}</Card.Title>
-          <Card.Text>{ProjectItems[projectIndex].summary}</Card.Text>
+          <Card.Title>{project.title}</Card.Title>
+          <Card.Text>{project.summary}</Card.Text>
           <div
             style={{
               display: "flex",
@@ -37,7 +28,7 @@ function ProjectCard(props: ProjectCardProps) {
           >
             <Button
               variant="outline-dark"
-              href={ProjectItems[projectIndex].githubLink}
+              href={project.githubLink}
               target="_blank"
             >
               Github Link

@@ -8,7 +8,7 @@ function Header() {
   const openDropdown = () => setOpen(true);
 
   return (
-    <div>
+    <>
       <Navbar
         variant="light"
         bg="light"
@@ -16,12 +16,7 @@ function Header() {
         expanded={isOpen}
         fixed="top"
       >
-        <Nav.Link
-          style={{
-            color: "#333",
-          }}
-          href="/website/"
-        >
+        <Nav.Link style={{ color: "black" }} href="/website/">
           Sean Low
         </Nav.Link>
         <Navbar.Toggle
@@ -42,7 +37,7 @@ function Header() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </div>
+    </>
   );
 }
 

@@ -1,28 +1,22 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { ExperienceItems } from "../../utils/User";
+import { JobExperienceItem } from "../../utils/UserTypes";
 
 type JobProps = {
-  infoIndex: number;
+  job: JobExperienceItem;
 };
 
 function JobItem(props: JobProps) {
-  const { infoIndex } = props;
+  const { job } = props;
 
   return (
     <>
-      <Card
-        style={{
-          borderStyle: "none",
-          width: "30rem",
-          margin: "1vw 1vw 1vw 1vw",
-        }}
-      >
+      <Card className="exp-card">
         <Card.Body>
-          <h5>{ExperienceItems[infoIndex].title}</h5>
-          <h6>{ExperienceItems[infoIndex].role}</h6>
-          <h6>{ExperienceItems[infoIndex].duration}</h6>
-          <p>{ExperienceItems[infoIndex].description}</p>
+          <h5>{job.title}</h5>
+          <h6>{job.role}</h6>
+          <h6>{job.duration}</h6>
+          <p>{job.description}</p>
         </Card.Body>
       </Card>
     </>

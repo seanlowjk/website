@@ -1,3 +1,5 @@
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
 export type JobExperienceItem = {
   title: string;
   role: string;
@@ -10,4 +12,10 @@ export type ProjectItem = {
   summary: string;
   backgroundImageUrl: string;
   githubLink: string;
+};
+
+export type SocialLink = {
+  buttonColor: string;
+  icon: IconDefinition;
+  link: string;
 };

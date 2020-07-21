@@ -1,34 +1,17 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
+import { ProjectItems } from "../../utils/UserConstants";
 
 function Projects() {
   return (
-    <div id="projects">
-      <Card>
-        <Card.Header
-          style={{
-            background: "white",
-            color: "black",
-          }}
-          className="text-center"
-        >
-          Projects
-        </Card.Header>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <ProjectCard projectIndex={0} />
-
-          <ProjectCard projectIndex={1} />
-
-          <ProjectCard projectIndex={2} />
+    <div className="Projects" id="projects">
+      <Card className="project-container">
+        <Card.Header className="text-center">Projects</Card.Header>
+        <div className="project-cards">
+          {ProjectItems.map((project) => (
+            <ProjectCard project={project} />
+          ))}
         </div>
       </Card>
     </div>
