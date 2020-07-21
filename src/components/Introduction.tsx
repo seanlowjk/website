@@ -6,32 +6,32 @@ function Introduction() {
     <div id="home">
       <Jumbotron
         style={{
+          background: "black",
           marginTop: "auto",
           height: "100vh",
           minHeight: "500px",
-          background: "#aaa",
           position: "relative",
+          display: "flex",
+          textAlign: "center",
+          alignItems: "center",
+          justifyContent: "center",
           zIndex: 0,
         }}
       >
         <Container
           style={{
-            textAlign: "center",
-            alignItems: "center",
-            justifyContent: "center",
-            marginTop: "19vh",
             zIndex: -1,
           }}
         >
           <video
             src="images/3241.mp4"
             style={{
-              position: "fixed",
-              top: 0,
-              right: 0,
-              bottom: 0,
-              left: 0,
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              height: "100vh",
               width: "100vw",
+              transform: "translate3d(-50%, -50%, 0)",
               zIndex: -2,
             }}
             autoPlay
