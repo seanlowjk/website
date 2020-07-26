@@ -15,6 +15,7 @@ function Introduction() {
           />
           <h1 className="container-header">Sean Low</h1>
           <h4 className="container-description"> Full Stack Web Developer </h4>
+          <br />
           <Button variant="outline-light" href="Resume.pdf" target="_blank">
             Resume
           </Button>
