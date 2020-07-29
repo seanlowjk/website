@@ -77,7 +77,7 @@ export const SocialLinks: SocialLink[] = [
   {
     buttonColor: "#0e76a8",
     icon: faLinkedin,
-    link: "https://linkedun.com/in/seanlowjk",
+    link: "https://linkedin.com/in/seanlowjk",
   },
   {
     buttonColor: "#0088CC",
