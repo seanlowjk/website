@@ -12,6 +12,7 @@ export type ProjectItem = {
   summary: string;
   backgroundImageUrl: string;
   githubLink: string;
+  linkText: string;
 };
 
 export type SocialLink = {

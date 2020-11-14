@@ -49,6 +49,7 @@ export const ProjectItems: ProjectItem[] = [
       "Developed by a Team of 6 using Unity and GLSL",
     backgroundImageUrl: "images/aether.png",
     githubLink: "https://github.com/Eclmist/Aether",
+    linkText: "Github Link",
   },
   {
     title: "Drop The Beat",
@@ -57,6 +58,7 @@ export const ProjectItems: ProjectItem[] = [
       "music by geolocation! Built in a day for Hack n' Roll 2020.",
     backgroundImageUrl: "images/dropthebeat.png",
     githubLink: "https://github.com/seanlowjk/DropTheBeat",
+    linkText: "Github Link",
   },
   {
     title: "$aveNUS",
@@ -65,6 +67,7 @@ export const ProjectItems: ProjectItem[] = [
       "This was developed using Java and JavaFX for CS2103T: Software Engineering",
     backgroundImageUrl: "images/saveNUS.png",
     githubLink: "https://github.com/AY1920S1-CS2103T-F13-2/main",
+    linkText: "Github Link",
   },
   {
     title: "Travelling Salesman Design Task",
@@ -72,6 +75,7 @@ export const ProjectItems: ProjectItem[] = [
       "This project aims to design an interactive calendar to help travelling salesman navigate through cities and his or her meetings",
     backgroundImageUrl: "images/salesman.png",
     githubLink: "Salesman.pdf",
+    linkText: "View PDF",
   },
   {
     title: "Roommates Design Task",
@@ -79,6 +83,7 @@ export const ProjectItems: ProjectItem[] = [
       "This project aims to design an interactive mobile application to help young adults find roommates and enhance their roommate living experience",
     backgroundImageUrl: "images/roommates.png",
     githubLink: "Rommmates.pdf",
+    linkText: "View PDF",
   },
 ];
 

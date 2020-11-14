@@ -31,7 +31,7 @@ function ProjectCard(props: ProjectCardProps) {
               href={project.githubLink}
               target="_blank"
             >
-              Github Link
+              {project.linkText}
             </Button>
           </div>
         </Card.Body>
