@@ -82,7 +82,7 @@ export const ProjectItems: ProjectItem[] = [
     summary:
       "This project aims to design an interactive mobile application to help young adults find roommates and enhance their roommate living experience",
     backgroundImageUrl: "images/roommates.png",
-    githubLink: "Rommmates.pdf",
+    githubLink: "Roommates.pdf",
     linkText: "View PDF",
   },
 ];
