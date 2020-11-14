@@ -66,6 +66,20 @@ export const ProjectItems: ProjectItem[] = [
     backgroundImageUrl: "images/saveNUS.png",
     githubLink: "https://github.com/AY1920S1-CS2103T-F13-2/main",
   },
+  {
+    title: "Travelling Salesman Design Task",
+    summary:
+      "This project aims to design an interactive calendar to help travelling salesman navigate through cities and his or her meetings",
+    backgroundImageUrl: "images/salesman.png",
+    githubLink: "Salesman.pdf",
+  },
+  {
+    title: "Roommates Design Task",
+    summary:
+      "This project aims to design an interactive mobile application to help young adults find roommates and enhance their roommate living experience",
+    backgroundImageUrl: "images/roommates.png",
+    githubLink: "Rommmates.pdf",
+  },
 ];
 
 export const SocialLinks: SocialLink[] = [
