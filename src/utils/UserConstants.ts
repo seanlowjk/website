@@ -8,6 +8,28 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const ExperienceItems: JobExperienceItem[] = [
   {
+    title: "NUS CS2030: Programming Methodology II",
+    role: "Teaching Assistant",
+    duration: "Aug 2019 - ",
+    description:
+      `
+        Facilitated the teaching of Object-Oriented Programming, Fundamental Software Engineering Principles 
+        and Java 11 Streams Marked and went through coding to give feedback to undergraduates to 
+        improve general code quality and fundamental software engineering principles.
+      `
+  },
+  {
+    title: "NUS CS2102: Database Systems", 
+    role: "Teaching Assistant", 
+    duration: "Jan 2021 - Apr 2021", 
+    description: 
+      `
+        Facilitated the teaching of Relational Algebra, ER Diagram, SQL, Functional Dependencies and Normalization as part 
+        of the course curriculum. Went through tutorial submissions and solutions to clarify uunderstanding and review
+        concepts learnt throughout the semester. 
+      `
+  }, 
+  {
     title: "Source Academy",
     role: "Research Intern",
     duration: "May 2020 - Jul 2020",
@@ -24,14 +46,6 @@ export const ExperienceItems: JobExperienceItem[] = [
       "Worked closely with product and engineering teams by running back-end features to deliver smoother user experience.",
   },
   {
-    title: "NUS CS2030: Programming Methodology II",
-    role: "Teaching Assistant",
-    duration: "Aug 2019 - ",
-    description:
-      "Facilitated the teaching of Object-Oriented Programming, Fundamental Software Engineering Principles and Java 11 Streams. " +
-      "Marked and went through coding to give feedback to undergraduates to improve general code quality and fundamental software engineering principles.",
-  },
-  {
     title: "NUS CS1101S: Programming Methodology",
     role: "Teaching Assistant",
     duration: "Aug 2019 - Dec 2019",
@@ -42,6 +56,17 @@ export const ExperienceItems: JobExperienceItem[] = [
 ];
 
 export const ProjectItems: ProjectItem[] = [
+  {
+    title: "CATcher",
+    summary: `
+    CATcher is a cross-platform application for Crowd-sourced 
+    Anonymous Testing of software. It uses GitHub as the backend 
+    for hosting bug reports.
+    `, 
+    backgroundImageUrl: "images/CATcher_logo.png",
+    githubLink: "https://github.com/CATcher-org/CATcher",
+    linkText: "Github Link",
+  },
   {
     title: "Project Aether",
     summary:
