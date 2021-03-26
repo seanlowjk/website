@@ -23,7 +23,7 @@ function Projects() {
         <Card.Header className="text-center">Projects</Card.Header>
         <div className="project-cards">
           {projects.map((project) => (
-            <ProjectCard project={project} />
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </Card>

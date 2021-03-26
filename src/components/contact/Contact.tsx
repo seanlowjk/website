@@ -11,7 +11,7 @@ function Contact() {
         <Card.Body className="contact-body">
           <div className="social-cards">
             {SocialLinks.map((socialLink) => (
-              <SocialButton socialLink={socialLink} />
+              <SocialButton key={socialLink.icon.iconName} socialLink={socialLink} />
             ))}
           </div>
           <div>(c) Low Jun Kai, Sean 2020</div>

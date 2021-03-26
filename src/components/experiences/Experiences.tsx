@@ -23,7 +23,7 @@ function Experiences() {
         <Card.Header className="text-center">Experiences</Card.Header>
         <div className="exp-cards">
           {jobExperiences.map((job) => (
-            <Job job={job} />
+            <Job key={job.title} job={job} />
           ))}
         </div>
       </Card>
