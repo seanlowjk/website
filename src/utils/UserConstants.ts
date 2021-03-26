@@ -1,59 +1,10 @@
-import { JobExperienceItem, ProjectItem, SocialLink } from "./UserTypes";
+import { ProjectItem, SocialLink } from "./UserTypes";
 import {
   faGithub,
   faLinkedin,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-export const ExperienceItems: JobExperienceItem[] = [
-  {
-    title: "NUS CS2030: Programming Methodology II",
-    role: "Teaching Assistant",
-    duration: "Aug 2019 - ",
-    description:
-      `
-        Facilitated the teaching of Object-Oriented Programming, Fundamental Software Engineering Principles 
-        and Java 11 Streams Marked and went through coding to give feedback to undergraduates to 
-        improve general code quality and fundamental software engineering principles.
-      `
-  },
-  {
-    title: "NUS CS2102: Database Systems", 
-    role: "Teaching Assistant", 
-    duration: "Jan 2021 - Apr 2021", 
-    description: 
-      `
-        Facilitated the teaching of Relational Algebra, ER Diagram, SQL, Functional Dependencies and Normalization as part 
-        of the course curriculum. Went through tutorial submissions and solutions to clarify uunderstanding and review
-        concepts learnt throughout the semester. 
-      `
-  }, 
-  {
-    title: "Source Academy",
-    role: "Research Intern",
-    duration: "May 2020 - Jul 2020",
-    description:
-      "Worked as a Full-Stack Developer to deliver a gamefied platform for students in CS1101S: Programming Methodology. " +
-      "Worked closely with the teaching team to gather user feedback to develop fluid user experience for incoming freshmen.",
-  },
-  {
-    title: "NodeFlair",
-    role: "Software Engineering Intern",
-    duration: "Jan 2020 - Apr 2020",
-    description:
-      "Worked as a Full-Stack Developer to deliver features for talents and administrators in a fast-paced tech recruitment market. " +
-      "Worked closely with product and engineering teams by running back-end features to deliver smoother user experience.",
-  },
-  {
-    title: "NUS CS1101S: Programming Methodology",
-    role: "Teaching Assistant",
-    duration: "Aug 2019 - Dec 2019",
-    description:
-      "Taught basic recursion, lambda calculus and data structures such as lists and binary search trees for 7 Computer Science freshmen. " +
-      "Marked and went through coding to give feedback to freshmen to clarify understanding and review basic concepts.",
-  },
-];
 
 export const ProjectItems: ProjectItem[] = [
   {

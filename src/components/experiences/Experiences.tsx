@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import Job from "./JobItem";
-import { ExperienceItems } from "../../utils/UserConstants";
+import { JobExperienceItem } from "../../utils/UserTypes";
 
 function Experiences() {
+  const [jobExperiences, setJobExperiences] = useState<JobExperienceItem[]>([]);
+
+  const getExperiences = (): Promise<JobExperienceItem[]> => {
+    return fetch(process.env.REACT_APP_DATA_REPO || '')
+    .then(res => res.json())
+    .then(json => json.experiences || []);
+  };
+
+  useEffect(() => {
+    getExperiences().then(jobs => setJobExperiences(jobs));
+  }, [setJobExperiences]);
+
   return (
     <div className="Experiences" id="experiences">
       <Card className="exp-container">
         <Card.Header className="text-center">Experiences</Card.Header>
         <div className="exp-cards">
-          {ExperienceItems.map((job) => (
+          {jobExperiences.map((job) => (
             <Job job={job} />
           ))}
         </div>
