@@ -7,7 +7,8 @@ function Experiences() {
   const [jobExperiences, setJobExperiences] = useState<JobExperienceItem[]>([]);
 
   const getExperiences = (): Promise<JobExperienceItem[]> => {
-    return fetch(process.env.REACT_APP_DATA_REPO || '')
+    const url: string = `${process.env.REACT_APP_DATA_REPO}/experiences.json`;
+    return fetch(url)
     .then(res => res.json())
     .then(json => json.experiences || []);
   };
