@@ -10,6 +10,8 @@ jobs:
         run: |
           yarn install
           yarn build 
+        env:
+          REACT_APP_DATA_REPO: ${{ secrets.REACT_APP_DATA_REPO }}
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
